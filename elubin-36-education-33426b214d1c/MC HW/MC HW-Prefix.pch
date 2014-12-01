@@ -1,0 +1,79 @@
+//
+// Prefix header for all source files of the 'MC HW' target in the 'MC HW' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#import "SVProgressHUD.h"
+
+
+
+    #if DEBUG
+        #define API_PORT ":8443" //
+        #define SHOW_WEB_BASED_500 1
+        #define RELEASE 0
+    #endif
+
+    #if RELEASE
+        #define API_PORT ""
+        #define SHOW_WEB_BASED_500 0
+        #define DEBUG 0
+    #endif
+
+    #define SERVER_NAME @"https://mobile.freudigman.com"
+    #define SERVER_ADDRESS SERVER_NAME API_PORT "/"
+    #define RootURL SERVER_ADDRESS "api/" //@"http://localhost:8000/api/"//
+    #import "TSHTTPRequest.h"
+    #import "TSUser.h"
+    #import "NSObject+SBJson.h"
+    #import "UIView+TTAdditions.h"
+#import "UIFont+LineHeight.h"
+    #import "ELTableViewController.h"
+    #define SVPROGRESSHUD_DISABLE_NETWORK_INDICATOR 1
+
+#define LAST_LOGGED_IN_KEY @"UserDefaults_last_logged_in"
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+    #define NSLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+NSString extern *const  MC_GRADES_SHOULD_DISMISS_POPOVER;
+#define THIRTY_SIX_DEFAULT_FONT_NAME @"Helvetica-Bold"
+#define THIRTY_SIX_DEFAULT_BUBBLE_COLOR RGBCOLOR(28,23,25)//RGBCOLOR(81,143,198)
+
+
+    #define UnuploadedTestsKey @"unuploadedTestKeyNSUserDefaults"
+
+#define ENABLE_SUBSET_ASSIGNMENTS 1
+
+#define MAXIMUM_SCORE_FOR_SECTION 36
+
+#define IS_IPHONE_5 ( [ [ UIScreen mainScreen ] bounds ].size.height == 568 )
+
+/*
+ *  System Versioning Preprocessor Macros
+ */ 
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+/*
+ *  Usage
+ */
+
+#define IS_IOS_7 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")
+
+UIColor * kDefaultToolbarColor;
+UIColor * kDefaultTableViewBackgroundColor;
+
+#endif

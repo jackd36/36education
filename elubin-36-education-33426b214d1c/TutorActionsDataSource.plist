@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>kMTSlideViewControllerSectionTitleKey</key>
+		<string>kSlideViewControllerSectionTitleNoTitle</string>
+		<key>kSlideViewControllerSectionViewControllersKey</key>
+		<array>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>Current Assignments</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string>AssignHomeworkViewController</string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>83-calendar</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>kMTSlideViewControllerSectionTitleKey</key>
+		<string>Performance</string>
+		<key>kSlideViewControllerSectionViewControllersKey</key>
+		<array>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>Homework</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string>StudentActionViewController</string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>33-cabinet</string>
+			</dict>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>ACTs</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string>ACTScoresViewController</string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>108-badge</string>
+			</dict>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>Target Scores</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string>DefaultViewControlleriPadSplitViewController</string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>13-target</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>kMTSlideViewControllerSectionTitleKey</key>
+		<string>Aggregation</string>
+		<key>kSlideViewControllerSectionViewControllersKey</key>
+		<array>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>Graphs &amp; Aggregation</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string></string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>81-dashboard</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>36education_requires_admin</key>
+		<true/>
+		<key>kMTSlideViewControllerSectionTitleKey</key>
+		<string>Admin</string>
+		<key>kSlideViewControllerSectionViewControllersKey</key>
+		<array>
+			<dict>
+				<key>kSlideViewControllerViewControllerTitleKey</key>
+				<string>Edit Users</string>
+				<key>kSlideViewControllerViewControllerKey</key>
+				<string></string>
+				<key>kSlideViewControllerViewControllerIconKey</key>
+				<string>81-dashboard</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
